@@ -127,3 +127,24 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+/.vs/Open-Edu/v15/.suo
+*.sqlite
+/.vs/slnx.sqlite-journal
+/.vs/VSWorkspaceState.json
+/app/migrations/0001_initial.py
+/app/migrations/0002_auto_20201105_1901.py
+/app/migrations/0003_auto_20201105_1904.py
+/app/migrations/0004_auto_20201105_1908.py
+/app/migrations/0005_auto_20201106_1608.py
+/app/migrations/0006_auto_20201112_2201.py
+/app/migrations/0007_auto_20201117_2145.py
+/app/migrations/0008_auto_20201118_1649.py
+/app/migrations/__init__.py
+/env6/Scripts
+/env6
+/media
+/DjangoWebProject3.pyproj
+/DjangoWebProject3.pyproj.user
+/app/static/app/scripts
+/app/static/app/fonts
+/app/static/app/img

@@ -1,0 +1,37 @@
+﻿{% extends "app/layout.html" %}
+
+{% block content %}
+
+<h2>Благодарю за обратную связь!</h2>
+<br />
+<p>Вы предоставили следующие сведения:</p>
+<br />
+<p>Ваше имя: {{ request.username }}</p>
+<br />
+{% if request.gender == '1' %}
+<p>Ваш пол: мужской </p>
+{% else %}
+<p>Ваш пол: женский </p>
+{% endif %}
+<br />
+{% if request.likes %}
+<p>Вам нравится мой сайт</p>
+{% else %}
+<p>Вам не нравится мой сайт</p>
+{% endif %}
+<br />
+{% if request.where == 'link' %}
+<p>Вы попали на сайт по ссылке с другого сайта</p>
+{% elif request.where == 'author' %}
+<p>Вы узнали о сайте от автора</p>
+{% else %}
+<p>Вы узнали о сайте не от автора и не попали сюда по ссылке с другого сайта</p>
+{% endif %}
+<br />
+<p>Вы дали сайту оценку: {{ request.mark }}</p>
+<br />
+<p>Ваши пожелания сайту:</p>
+<br />
+<textarea readonly>{{ request.text }}</textarea>
+
+{% endblock %}

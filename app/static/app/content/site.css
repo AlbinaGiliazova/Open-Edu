@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+html {
+    background: #17a2b8;
+}
+
+body {
+    margin: 0% 20%;
+    padding: 3%;
+    background: #ffffff;
+    line-height: 1.5;
+    font-family: 'Times New Roman', sans-serif;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    font-size: 14px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 4.2rem;
+    line-height: 1.3;
+    font-weight: 400;
+}
+
+input {
+    border-radius: 50px;
+    margin-left: 10px;
+    max-width: 280px;
+}
+
+a {
+    color: #242080;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+select,
+textarea {
+    max-width: 280px;
+}
+
+/* styles for validation helpers */
+.field-validation-error {
+    color: #b94a48;
+}
+
+.field-validation-valid {
+    display: none;
+}
+
+input.input-validation-error {
+    border: 1px solid #b94a48;
+}
+
+input[type="checkbox"].input-validation-error {
+    border: 0 none;
+}
+
+.validation-summary-errors {
+    color: #b94a48;
+}
+
+.validation-summary-valid {
+    display: none;
+}
+
+.center {
+    text-align: center;
+}
+
+.text-size16 {
+    font-size: 16px;
+}
+
+img {
+    width: 64px;
+    height: 64px;
+}
+
+h5 {
+    color: aqua;
+}

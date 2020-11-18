@@ -1,0 +1,42 @@
+﻿{% extends "app/layout.html" %}
+
+{% block content %}
+
+<h2>Обратная связь</h2>
+
+<form method="post" action="/pool_post">
+    {% csrf_token %}
+    {{ pool_form.as_p }}
+    <button id="b1" type="submit" class="btn btn-primary">Отправить</button>
+    <script>
+    function b1_mouseover()
+    {
+        $('#b1').css('color', 'yellow');
+    }
+    function b1_mouseout() {
+        $('#b1').css('color', 'white');
+    }
+    function username_focus() {
+        $('#id_username').css('background-color', 'yellow');
+    }
+    function username_blur() {
+        $('#id_username').css('background-color', 'white');
+    }
+    function text_focus() {
+        $('#id_text').css('background-color', 'yellow');
+    }
+    function text_blur() {
+        $('#id_text').css('background-color', 'white');
+    }
+
+    $('#b1').mouseover(b1_mouseover);
+    $('#b1').mouseout(b1_mouseout);
+    $('#id_username').focus(username_focus);
+    $('#id_username').blur(username_blur);
+    $('#id_text').focus(text_focus);
+    $('#id_text').blur(text_blur);
+
+    </script>
+</form>
+
+{% endblock %}

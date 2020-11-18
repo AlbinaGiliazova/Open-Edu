@@ -1,0 +1,25 @@
+﻿{% extends "app/layout.html" %}
+
+{% block content %}
+
+<h2>{{ title }}</h2> <br />
+
+{% for post in posts %}
+
+<hr />
+
+<div class="">
+
+    <h2> {{post.header}} </h2>
+
+    <h4> {{post.date}} </h4>
+
+    <p class="text-size16"> {{post.description}} </p>
+
+    <p class="text-size16"><a href="{% url 'blogpost' parameter=post.id %}"> Читать далее </a> </p>
+
+</div>
+
+{% endfor %}
+
+{% endblock %}

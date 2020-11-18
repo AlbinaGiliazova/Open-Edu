@@ -1,0 +1,19 @@
+﻿{% extends "app/layout.html" %}
+{% load staticfiles %}
+
+{% block content %}
+</br>
+</br>
+</br>
+</br>
+</br>
+<h1>Добавление новой статьи</h1>
+</br>
+<form method="post" action="/newpost" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{ article_form.as_p }}
+    <button type="submit" class="btn btn-primary">Отправить</button>
+ 
+</form>
+
+{% endblock %}
