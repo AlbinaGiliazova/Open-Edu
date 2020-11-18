@@ -2,11 +2,18 @@
 
 {% block content %}
 
-<h2>Контакты</h2>
+{% if user.is_authenticated %}
+
 <h3>Электронная почта</h3>
 
 <address>
-    <strong>giliazova@mail.ru</strong>
+    <strong>Адрес</strong>
 </address>
+
+{% else %}
+
+<h3> Для просмотра контактов, пожалуйста, авторизуйтесь </h3>
+
+{% endif %}
 
 {% endblock %}
